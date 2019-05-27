@@ -4,6 +4,8 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>			
+
     <style>
         .no-padding {
             padding: 0 !important;
@@ -101,6 +103,7 @@
 
     </style>
 </header>
+<body>  
 <div class="container-fluid no-padding">
     <div class="container-fluid no-padding nav">
         <div class="container">
@@ -160,6 +163,19 @@
                     Rockmedia
                 </li>
                 <li>Quando me mudei para Maringá/Pr, esta foi a primeira empresa a me oferecer uma oportunidade (e sou grato por isto), entretanto outras oportunidades mais alinhas das ao meu objetivo (desenvolvimento) surgiram e infelizmente meu tempo de passagem por lá foi breve, mas bastante proveitoso.</li>
+                
+                <div class="autoplay">
+                    <div>your content</div>
+                    <div>your content</div>
+                    <div>your content</div>
+                </div>
+                <div class="your-class">
+  <div>your content</div>
+  <div>your content</div>
+  <div>your content</div>
+</div>
+            
+            
             </ul>
         </div>
     </section>
@@ -182,4 +198,22 @@
         </div>
     </section>
 </div>
+
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+$('.autoplay').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+</script>
+
+</body>
 </html>
