@@ -333,10 +333,11 @@ tags: HTML, tags, otimização, configuração de campanhas, análise de dados, 
 <script>
 $(document).ready(function(){
     $('.autoplay').slick({
-        slidesToShow: 3,
+        slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
+        arrows: false,
+        fade: true,
+        asNavFor: '.slider-nav'
     });
 });
 </script>
