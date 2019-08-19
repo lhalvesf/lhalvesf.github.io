@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
     <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">	
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
     <style>
         * {
@@ -14,6 +15,7 @@
         }
         h1, h2, h3, h4, h5, h6 {
             overflow-y: hidden;
+            line-height: inherit;
         }
         .badge-primary {
             background: #000;
@@ -162,9 +164,10 @@
             font-size: 13px;
             font-weight: normal;
             font-style: italic;
+            color: #fff !important;
         }
         .contact a {
-            color: #fff;
+            color: #fff !important;
             font-size: 18px;
         }
         .contact i {
@@ -181,6 +184,16 @@
             position: relative;
             top:-14px;
         }
+        h3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        a h4 {
+            color: #000 !important;
+        }
+        a:hover {
+            text-decoration: none;
+        }
     </style>
 </header>
 <body>  
@@ -191,8 +204,9 @@
         <h1 class="display-4 fonte">Luiz H. A. Ferreira</h1>
         <p class="lead"><strong>Desenvolvedor Front-end</strong>, Maringá/PR</p>
         <p class="contact">
-            <a href=""><i class="fa fa-whatsapp"></i> +55 14 981717586</a> • <a href=""><i class="fa fa-envelope-o"></i> lh.alvesf@gmail.com</a>
+            <a href="https://api.whatsapp.com/send?phone=5514981717586"><i class="fa fa-whatsapp"></i> +55 14 981717586</a> • <a href="mailto:lh.alvesf@gmail.com"><i class="fa fa-envelope-o"></i> lh.alvesf@gmail.com</a>
         </p>
+       
         <p></p>
     </div>
 
@@ -203,25 +217,18 @@
     <section class="row">
         <ul>
             <li>
-                <h3>SOBRE</h3>
-                <p>Desenvolvimento de interfaces web, aplicações e websites utilizando diversas tecnologias.</p>   
+                <h3>SOBRE MIM</h3>
+                <p>"Desenvolvo interfaces para ambientes web, aplicações e websites utilizando diversas tecnologias."</p>   
             </li>
         </ul>
-    </section>
-    <hr>
-    <section class="row">
-        <ul>
-            <li>
-                <h3>EXPERIÊNCIA</h3>
-                <p>Desenvolvimento de interfaces web, aplicações e websites utilizando diversas tecnologias.</p>   
-            </li>
-        </ul>
-    </section>
-    <hr>
-    <section class="row">
-        <div class="col-12">
+        <br>
             <br>
-            <br>
+            <ul>
+                <li>
+                    <h3>HARD SKILLS</h3>
+                    <P>Scrum, Nodejs, Vuejs, CSS Critical, Otimização, SEO on page, microdata, Wordpress, Heroku, VPS, Linux, Docker [..]</P>
+                </li>
+            </ul>
             <ul>
                 <li>
                     <ul class="list-inline">
@@ -238,7 +245,13 @@
                     </ul>
                 </li>              
             </ul>
-            <br>
+            <br>            
+            <ul>
+                <li>
+                    <h3>SOFT SKILLS</h3>
+                    <P>liderança, Comunicação Eficaz, Trabalho direcionado por resultados.</P>
+                </li>
+            </ul>
             <br>
             <ul>
                 <li>
@@ -256,29 +269,42 @@
                     </ul>
                 </li>              
             </ul>
-        </div>
     </section>
-
+    <hr>
     <section class="row">
-        <div col-12>
-            <ul>
+        <ul>
+            <li>
+                <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+                <p>Conheça algumas das minhas últimas experiências profissionais, veja mais em meu <a href="">github</a>.</p>   
+            </li>
                 <li>
-                    <h3><a href="#">Print Loja</a></h3>   
+                    <h4>Freelance <small><em>atualmente</em></small></h4>   
                     <p>
-                        
-                        portifolio: 
-
-                        social media 
-                        emails
-                        videos
-                        ux
-                        blog
-
+                         Desenvolvo soluções web personalizadas para diversos segmentos, confira em meu <a href="">portifólio</a>.
                     <p>                 
                 </li>
                 <li>
-                    <h3><a href="#">Rockmedia</a></h3>   
-                    <p>Quando me mudei para Maringá/Pr, esta foi a primeira empresa a me oferecer uma oportunidade (e sou grato por isto), entretanto outras oportunidades mais alinhas das ao meu objetivo (desenvolvimento) surgiram e infelizmente meu tempo de passagem por lá foi breve, mas bastante proveitoso.</p>                 
+                    <a data-toggle="collapse" href="#print" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> Print Loja <small><em>(e-commerce)</em> desde 2017</small></h4></a>
+                    <p class="collapse" id="print">
+                        Desenvolvimento de soluções automatizadas de remarketing utilizando tecnologias diversas com ênfase na otimização de conversão, gerenciamento e criação de mailings semanais e análise de conversão.
+                    </p>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#dpi" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> DPI Agência, <small>2011 a 2013</small></h4></a>
+                    <p class="collapse" id="dpi">
+                        Na DPI eu tive a oportunidade de fazer uma imersão com profissionais de altíssimo nível, lá aprendi muito sobre design e coisas mais técnicas, como: impressão, perfis de cor, fotolitos, resoluções e também dei meus primeiros passos no desenvolvimento para internet criando minhas primeiras páginas simples com html, css e javascript. 
+                    </p>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#grafisbel" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> Grafisbel, <small>2006 a 2010</small></h4></a>
+                    <p class="collapse" id="grafisbel">
+                        Aqui foi onde tudo começou, lá aprendi (e ainda acho que lembro) todos os atalhos de corel draw. Formatos de papel, acabamentos, como uma impressora offset funciona e muitas outras coisas.. Tive a oportunidade de conhecer o fundador desta empresa Sérgio Quevedo, cujo tive a honra de aprender muitas coisas que me ajudam muito até hoje. Esta foi minha primeira oportunidade e onde dei os primeiros passos de minha carreira. 
+                    </p>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#diversos" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> Diversos</h4></a>
+                    <div class="collapse" id="diversos">
+                    <p>Projetos diversos desenvolvidos paralelamente.</p>                 
                     <div class="autoplay">
                         <div>
                             <figure>
@@ -306,100 +332,30 @@
                             </figure>
                         </div>
                     </div>
+                    </div>
                 </li>
-                <li>
-                    <h3><a href="#">DPI Agência</a></h3>
-                    <p>
-                        Na DPI eu tive a oportunidade de fazer uma imersão com profissionais de altíssimo nível, lá aprendi muito sobre design e coisas mais técnicas, como: impressão, perfis de cor, fotolitos, resoluções e também dei meus primeiros passos no desenvolvimento para internet criando minhas primeiras páginas simples com html, css e javascript. 
-                    </p>
-                </li>
-                <li>
-                    <h3><a href="#">Grafisbel</a></h3>
-                    <p>
-                        Aqui foi onde tudo começou, aqui eu aprendi (e ainda acho que lembro) todos os atalhos de corel draw. Formatos de papel, acabamentos, como uma impressora offset funciona e muitas outras coisas.. Tive a oportunidade de conhecer o fundador desta empresa Sérgio Quevedo (in memorian), cujo tive a honra de aprender muito sobre trabalho e sobre a vida e cultura em geral. Aqui dei meus primeiros passos. 
-                    </p>
-                </li>
-            </ul>
-        </div>
+        </ul>
+    </section>
+    <hr>
     </section>
 
     <section class="row">
         <div col-12>
-            <h3>Soft skills</h3>
-            <p>
-                - liderança
-                - comunicação eficaz
-                - result driven / trabalho direcionado por resultados
-
-                ***
-
-                docker
-                magento 
-                db-migrate, mysql-migrate
-            </p>
-            <!-- <p>
-                Banco de dados
-                SQL (Mysql Workbench, Pgadmin)
-                google analytics 
-                atualmente acompanho periódicamente conversões obtidas em sites de clientes relacionadas a otimizações e mailings que entrego.
-
-                GIT
-
-
-                HTML (microdata, view engines (ejs, jade, pug), )
-
-JS 
-vanilla js, jquery, reactjs, angular js, vuejs.
-
-Adobe Photoshop / Adobe Illustrator
-    Possuo vasta experiência na manipulação de imagem, vetores e afins, desde pré-impressão a otimização para web e afins.
-
-E-mail 
-Trabalho há mais de dois anos criando peças de e-mail (do conceito ao código e envio), analisando as métricas e trabalhando em otimizações.
-Case: Otimizamos nosso trabalho.
-
-tags: HTML, tags, otimização, configuração de campanhas, análise de dados, plataformas (splio, expertsender, )
-
-    CASE AUTOMATIZANDO O FLUXO
-
-    Cenário:
-    Após análise do fluxo de compra de nossos clientes do e-commerce, constatamos uma alta recorrência de compra (em torno de 80%) e outras características
-    particulares como a segmentação de produtos (nossos produtos são específicos variando de acordo com a impressora de nossos clientes), criei testes de envio
-    segmentados (antes todos clentes recebiam o mesmo email com produtos variados e muitas vezes não relacionados com sua lista de compras), neste teste criei listas
-    especificas de compradores de cada tipo/modelo de produto e enviei
-
-    Ação: Automação do fluxo de envio de emails segmentados.
-    Através da utilização de bots construiu-se uma estrutura onde diariamente a base de dados de clientes/leads é atualizada, e no caso de compra o cliente é direcionado
-    a um fluxo de recompra onde o cliente receberá um email especifico lembrando sobre o possível momento de recompra (ainda podendo escolher novo prazo para receber novamente o lembrete com apenas um clique direto no email).
-    tags: python, api, sql.
-
-    Bonus: lembre-me mais tarde 
-    O cliente agora também pode selecionar uma data para receber um novo email lembrando sobre a recompra do seu produto. Basta clicar em um dos botões e aguardar o novo lembrete.
-    *imagem*
-
-    Resultado: Conversões automátizadas
-    Atualmente nossa automação tem se mostrado eficaz, gerando até x% de conversões, entretanto ainda estão sendo realizados testes, ajustes e otimizações.
-
-            </p> -->
-        </div>
-    </section>
-    <section class="row">
-        <div col-12>
-            <h3>objetivo</h3>
+            <!-- <h3>objetivo</h3> -->
             <blockquote class="quote-card">
                 <p>
-                    "Nenhum vento é favorável a um navio que não tem direção"
+                    Gosto de ter objetivos e metas claras em minha vida, no nível profissional a maior delas é me <em>aperfeiçoar continuamente em tecnologia</em>. Todos os dias novas tecnologias surgem e sempre estou disposto a <em>aprender, ensinar e criar soluções</em>. Busco experiências que agreguem este tipo de valor.
                 </p>
           
                 <cite>
-                    Confúcio
+                    Luiz H. A. Ferreira.
                 </cite>
             </blockquote>
-            <p>
+            <!-- <p>
                 Gosto de ter objetivos e metas claras em minha vida, no nível profissional a maior delas é me <em>aperfeiçoar continuamente em tecnologia</em>. Todos os dias novas tecnologias surgem e estar sempre disposto a <em>aprender, ensinar e criar soluções</em> , para mim, é a chave para manter-se no jogo. Busco experiências que agreguem este tipo de valor.
                 <br>
                 Me agrada a ideia de construir coisas relevantes para o mundo como contribuição.           
-            </p>
+            </p> -->
         </div>
     </section>
 </div>
@@ -426,6 +382,7 @@ tags: HTML, tags, otimização, configuração de campanhas, análise de dados, 
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
