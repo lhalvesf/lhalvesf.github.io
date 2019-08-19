@@ -4,17 +4,64 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>			
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">	
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     <style>
+        * {
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            overflow-y: hidden;
+        }
+        .badge-primary {
+            background: #000;
+            padding: 0.7em 1em 0.9em;
+        }
+        .badge-primary:hover {
+            background: gray;
+        }
+        .badge-primary a {
+            color: white;
+        }
+        .badge-primary a:hover {
+            text-decoration: none;
+        }
         .no-padding {
             padding: 0 !important;
         }
         .nav {
             background:white;
+            -webkit-box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+            -moz-box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+            box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+        }
+        .jumbotron {
+            background: #f56759 !important;
+            color: #fff;
+            padding-top: 2em 0 2em !important; 
+        }
+        .jumbotron h1 {
+            color: #ffce70;
+            font-size: 45px;
+        }
+        .perfil {
+            border-radius: 130px;
+            width: 150px;
+        }
+        .fonte {
+            font-family: 'Bree Serif', serif;
+        }
+        .nav-item a {
+            color: #000;
         }
         .navbar {
             padding: 1rem 1rem;
+        }
+        .info {
+            padding: 3em 1em 8em;
+            background: transparent;
         }
         .quote-card {
         background: #fff;
@@ -101,101 +148,119 @@
         .quote-card.yellow-card:before, .quote-card.yellow-card:after {
         color: #FBC02D;
         }
+        footer p, footer a {
+            color: white;
+        }
+        footer {
+            background: #212121;
+            padding: 22px 0 0;
+        }
+        ul {
+            font-size: 22px;
+        }
+        .badge {
+            font-size: 13px;
+            font-weight: normal;
+            font-style: italic;
+        }
+        .contact a {
+            color: #fff;
+            font-size: 18px;
+        }
+        .contact i {
+            position: relative;
+            top: 2px;
+        }
+        .titulo {
+            font-size:17px;
+            position: relative;
+            top:-5px;
+        }
+        .skills {
+            font-size:17px;
+            position: relative;
+            top:-14px;
+        }
     </style>
 </header>
 <body>  
-<div class="container-fluid no-padding">
-    <div class="container-fluid no-padding nav">
-        <div class="container">
-            <nav class="navbar navbar-expand-md">
-                <a class="navbar-brand" href="#">Luiz H. A. Ferreira</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#itens-menu" aria-controls="itens-menu" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="itens-menu">
-                    <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">contato</a>
-                    </li>
-                    <li class="nav-item"><a href="#"><i class="fa fa-facebook"></i></a><i class="fa fa-linkedin"></i></a><i class="fa fa-instagram"></i></a><i class="fa fa-github"></i></a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+    <div class="jumbotron text-center">
+        <figure>
+            <img src="./img/perfil.png" alt="" class="perfil">
+        </figure>
+        <h1 class="display-4 fonte">Luiz H. A. Ferreira</h1>
+        <p class="lead"><strong>Desenvolvedor Front-end</strong>, Maringá/PR</p>
+        <p class="contact">
+            <a href=""><i class="fa fa-whatsapp"></i> +55 14 981717586</a> • <a href=""><i class="fa fa-envelope-o"></i> lh.alvesf@gmail.com</a>
+        </p>
+        <p></p>
     </div>
-</div>
 
-
-<div class="row container">
-<div class="col-lg-2">
-        <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action active">
-                sobre
-            </a>
-            <a href="#" class="list-group-item list-group-item-action">portfolio</a>
-            <a href="#" class="list-group-item list-group-item-action">experiência</a>
-            <a href="#" class="list-group-item list-group-item-action">hard skills</a>
-            <a href="#" class="list-group-item list-group-item-action">soft skills</a>
-            <a href="#" class="list-group-item list-group-item-action">objetivos</a>
-        </div>
-</div>
-<div class="col-lg-10">
+        
 <div class="container">
+<div class="row info">
+<div class="col-lg-12">
     <section class="row">
-        <div col-12>
-            <h3>sobre</h3>
-            <p>Olá, meu nome é Luiz, tenho 26 anos. Sou natural de Jahú/SP, atualmente moro em Maringá/PR. Sou freelancer em <em><a>desenvolvimento para internet</a></em> e <em></em><a>design gráfico</a></em>, atendo diversas clientes em diferentes segmentos.</p>
-        </div>
         <ul>
-            <li>Inglês: Estou focado em melhorar minha conversação em inglês, compreendo, escrevo e leio bem o idioma.</li>
-            <li>Alemão (básico) <em>ja, ich sprache deutsche!</em> e espanhol (básico) <em><a href="#">empieze a traducir secciones de un libro</a></em></li>        
+            <li>
+                <h3>SOBRE</h3>
+                <p>Desenvolvimento de interfaces web, aplicações e websites utilizando diversas tecnologias.</p>   
+            </li>
         </ul>
-        <ul class="list-inline">
-            <li class="list-inline-item"><a href="#">tags: </a></li>
-            <li class="list-inline-item"><a href="#">front end</a></li>
-            <li class="list-inline-item"><a href="#">desenvolvimento</a></li>
-            <li class="list-inline-item"><a href="#">javascript</a></li>
-            <li class="list-inline-item"><a href="#">design gráfico</a></li>
-            <li class="list-inline-item"><a href="#">e-commerce</a></li>
-            <li class="list-inline-item"><a href="#">automatização</a></li>
-            <li class="list-inline-item"><a href="#">otimização</a></li>
-            <li class="list-inline-item"><a href="#">wordpress</a></li>
-            <li class="list-inline-item"><a href="#">marketing digital</a></li>
-            <li class="list-inline-item"><a href="#">e-mail marketing</a></li>
-            <li class="list-inline-item"><a href="#">e-commerce</a></li>
+    </section>
+    <hr>
+    <section class="row">
+        <ul>
+            <li>
+                <h3>EXPERIÊNCIA</h3>
+                <p>Desenvolvimento de interfaces web, aplicações e websites utilizando diversas tecnologias.</p>   
+            </li>
         </ul>
-        <a class="" href="#">ver mais</a>
-        <br>
-        <!-- <span>
-            <p>
-                livros: zero e um, cabaret místico, elon musk, assim falou zaratustra..
-            </p>
-            <p>
-                filmes: jorodorowsky
-            </p>
-            <p>
-                hobbies: ouvir música e tocar (tentar) violão, jiu jitsu, cozinhar, ler, escrever e desbravar a natureza.
-            </p>
-        </span> -->
+    </section>
+    <hr>
+    <section class="row">
+        <div class="col-12">
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skills">Softwares</li>
+                        <li class="list-inline-item"><img src="img/svg/photoshop.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/illustrator.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/premiere.svg" alt="" width="50"></li>
+                        <li class="list-inline-item skills">Tecnologias</li>
+                        <li class="list-inline-item"><img src="img/svg/002-html-5.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/003-css-3.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/004-js.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/001-php.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/005-python.svg" alt="" width="50"></li>
+                    </ul>
+                </li>              
+            </ul>
+            <br>
+            <br>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item titulo">Tags</li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">front end</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">desenvolvimento</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">javascript</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">e-commerce</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">automação</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">otimização</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">wordpress</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">e-mail marketing</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">e-commerce</a></li>
+                    </ul>
+                </li>              
+            </ul>
+        </div>
     </section>
 
-
     <section class="row">
         <div col-12>
-            <h3>experiência</h3>
-            <p>
-                Um breve relato das minhas experiências profissionais...
-            </p>
-
             <ul>
                 <li>
                     <h3><a href="#">Print Loja</a></h3>   
@@ -215,15 +280,31 @@
                     <h3><a href="#">Rockmedia</a></h3>   
                     <p>Quando me mudei para Maringá/Pr, esta foi a primeira empresa a me oferecer uma oportunidade (e sou grato por isto), entretanto outras oportunidades mais alinhas das ao meu objetivo (desenvolvimento) surgiram e infelizmente meu tempo de passagem por lá foi breve, mas bastante proveitoso.</p>                 
                     <div class="autoplay">
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
-                        <div>your content</div>
+                        <div>
+                            <figure>
+                                <img src="img/atrium.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/base.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/regnare.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/base.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/regnare.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
                     </div>
                 </li>
                 <li>
@@ -249,8 +330,14 @@
                 - liderança
                 - comunicação eficaz
                 - result driven / trabalho direcionado por resultados
+
+                ***
+
+                docker
+                magento 
+                db-migrate, mysql-migrate
             </p>
-            <p>
+            <!-- <p>
                 Banco de dados
                 SQL (Mysql Workbench, Pgadmin)
                 google analytics 
@@ -293,12 +380,12 @@ tags: HTML, tags, otimização, configuração de campanhas, análise de dados, 
     Resultado: Conversões automátizadas
     Atualmente nossa automação tem se mostrado eficaz, gerando até x% de conversões, entretanto ainda estão sendo realizados testes, ajustes e otimizações.
 
-            </p>
+            </p> -->
         </div>
     </section>
     <section class="row">
         <div col-12>
-            <h3>Objetivo</h3>
+            <h3>objetivo</h3>
             <blockquote class="quote-card">
                 <p>
                     "Nenhum vento é favorável a um navio que não tem direção"
@@ -309,26 +396,38 @@ tags: HTML, tags, otimização, configuração de campanhas, análise de dados, 
                 </cite>
             </blockquote>
             <p>
-                Gosto de ter objetivos e metas claras em minha vida, no nível profissional a maior delas é me <em>aperfeiçoar continuamente em tecnologias web</em>. Todos os dias novas tecnologias surgem e estar sempre disposto a <em>aprender, ensinar e criar soluções</em> , para mim, é a chave para realizar isto, portanto busco oportunidades que também estejam alinhados a este objetivo.
-                
+                Gosto de ter objetivos e metas claras em minha vida, no nível profissional a maior delas é me <em>aperfeiçoar continuamente em tecnologia</em>. Todos os dias novas tecnologias surgem e estar sempre disposto a <em>aprender, ensinar e criar soluções</em> , para mim, é a chave para manter-se no jogo. Busco experiências que agreguem este tipo de valor.
                 <br>
-
-                - Eu gostaria de deixar algum legado relevante para o mundo, como agradecimento pela infinidade de coisas que existem aqui. 
-            
+                Me agrada a ideia de construir coisas relevantes para o mundo como contribuição.           
             </p>
         </div>
     </section>
 </div>
 </div>
+
 </div>
-
-
+</div>
+</div>
+<footer class="col-12">
+        <div class="row text-center">
+            <div class="col-md-6 col-12">
+                <p>2019 &copy; Luiz H. A. Ferreira
+                </p>
+            </div>
+            <div class="col-md-6 col-12">
+                <a href="#"><i class="fa fa-facebook"></i></a>&nbsp;
+                <a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;
+                <a href="#"><i class="fa fa-instagram"></i></a>&nbsp;
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 <script
   src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
   integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
   crossorigin="anonymous"></script>
 
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 <script>
 $(document).ready(function(){
@@ -337,6 +436,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        arrows: false
     });
 });
 </script>
