@@ -1,0 +1,402 @@
+<html>
+<header>
+    <title>Luiz H. A. Ferreira - Freelance Web Developer & Graphic designer from Maringá, Brazil - Freelance Web Developer and Graphic designer from Maringá</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">	
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+    <style>
+        * {
+            overflow-x: hidden;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            overflow-y: hidden;
+            line-height: inherit;
+        }
+        .badge-primary {
+            background: #000;
+            padding: 0.7em 1em 0.9em;
+        }
+        .badge-primary:hover {
+            background: gray;
+        }
+        .badge-primary a {
+            color: white;
+        }
+        .badge-primary a:hover {
+            text-decoration: none;
+        }
+        .no-padding {
+            padding: 0 !important;
+        }
+        .nav {
+            background:white;
+            -webkit-box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+            -moz-box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+            box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+        }
+        .jumbotron {
+            background: #f56759 !important;
+            color: #fff;
+            padding-top: 2em 0 2em !important; 
+        }
+        .jumbotron h1 {
+            color: #ffce70;
+            font-size: 45px;
+        }
+        .perfil {
+            border-radius: 130px;
+            width: 150px;
+        }
+        .fonte {
+            font-family: 'Bree Serif', serif;
+        }
+        .nav-item a {
+            color: #000;
+        }
+        .navbar {
+            padding: 1rem 1rem;
+        }
+        .info {
+            padding: 3em 1em 8em;
+            background: transparent;
+        }
+        .quote-card {
+        background: #fff;
+        color: #222222;
+        padding: 20px;
+        padding-left: 50px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+        position: relative;
+        overflow: hidden;
+        min-height: 120px;
+        }
+        .quote-card p {
+        font-size: 22px;
+        line-height: 1.5;
+        margin: 0;
+        max-width: 80%;
+        }
+        .quote-card cite {
+        font-size: 16px;
+        margin-top: 10px;
+        display: block;
+        font-weight: 200;
+        opacity: 0.8;
+        }
+        .quote-card:before {
+        font-family: Georgia, serif;
+        content: "“";
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 5em;
+        color: rgba(238, 238, 238, 0.8);
+        font-weight: normal;
+        }
+        .quote-card:after {
+        font-family: Georgia, serif;
+        content: "”";
+        position: absolute;
+        bottom: -110px;
+        line-height: 100px;
+        right: -32px;
+        font-size: 25em;
+        color: rgba(238, 238, 238, 0.8);
+        font-weight: normal;
+        }
+        @media (max-width: 640px) {
+        .quote-card:after {
+            font-size: 22em;
+            right: -25px;
+        }
+        }
+        .quote-card.blue-card {
+        background: #0078FF;
+        color: #ffffff;
+        box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+        .quote-card.blue-card:before, .quote-card.blue-card:after {
+        color: #5FAAFF;
+        }
+        .quote-card.green-card {
+        background: #00970B;
+        color: #ffffff;
+        box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+        .quote-card.green-card:before, .quote-card.green-card:after {
+        color:#59E063 ;
+        }
+
+        .quote-card.red-card {
+        background: #F61E32;
+        color: #ffffff;
+        box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+        .quote-card.red-card:before, .quote-card.red-card:after {
+        color:#F65665 ;
+        }
+
+        .quote-card.yellow-card {
+        background: #F9A825;
+        color: #222222;
+        box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+        .quote-card.yellow-card:before, .quote-card.yellow-card:after {
+        color: #FBC02D;
+        }
+        footer p, footer a {
+            color: white;
+        }
+        footer {
+            background: #212121;
+            padding: 22px 0 0;
+        }
+        ul {
+            font-size: 22px;
+        }
+        .badge {
+            font-size: 13px;
+            font-weight: normal;
+            font-style: italic;
+            color: #fff !important;
+        }
+        .contact a {
+            color: #fff !important;
+            font-size: 18px;
+        }
+        .contact i {
+            position: relative;
+            top: 2px;
+        }
+        .titulo {
+            font-size:17px;
+            position: relative;
+            top:-5px;
+        }
+        .skills {
+            font-size:17px;
+            position: relative;
+            top:-14px;
+        }
+        h3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+        a h4 {
+            color: #000 !important;
+        }
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
+</header>
+<body>  
+    <div class="jumbotron text-center">
+        <figure>
+            <img src="./img/perfil.png" alt="" class="perfil">
+        </figure>
+        <h1 class="display-4 fonte">Luiz H. A. Ferreira</h1>
+        <p class="lead"><strong>Desenvolvedor Front-end</strong>, Maringá/PR</p>
+        <p class="contact">
+            <a href="https://api.whatsapp.com/send?phone=5514981717586"><i class="fa fa-whatsapp"></i> +55 14 981717586</a> • <a href="mailto:lh.alvesf@gmail.com"><i class="fa fa-envelope-o"></i> lh.alvesf@gmail.com</a>
+        </p>
+       
+        <p></p>
+    </div>
+
+        
+<div class="container">
+<div class="row info">
+<div class="col-lg-12">
+    <section class="row">
+        <ul>
+            <li>
+                <h3>SOBRE MIM</h3>
+                <p>"Desenvolvo interfaces para ambientes web, aplicações e websites utilizando diversas tecnologias."</p>   
+            </li>
+        </ul>
+        <br>
+            <br>
+            <ul>
+                <li>
+                    <h3>HARD SKILLS</h3>
+                    <P>Scrum, Nodejs, Vuejs, CSS Critical, Otimização, SEO on page, microdata, Wordpress, Heroku, VPS, Linux, Docker [..]</P>
+                </li>
+            </ul>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item skills">Softwares</li>
+                        <li class="list-inline-item"><img src="img/svg/photoshop.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/illustrator.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/premiere.svg" alt="" width="50"></li>
+                        <li class="list-inline-item skills">Tecnologias</li>
+                        <li class="list-inline-item"><img src="img/svg/002-html-5.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/003-css-3.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/004-js.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/001-php.svg" alt="" width="50"></li>
+                        <li class="list-inline-item"><img src="img/svg/005-python.svg" alt="" width="50"></li>
+                    </ul>
+                </li>              
+            </ul>
+            <br>            
+            <ul>
+                <li>
+                    <h3>SOFT SKILLS</h3>
+                    <P>liderança, Comunicação Eficaz, Trabalho direcionado por resultados.</P>
+                </li>
+            </ul>
+            <br>
+            <ul>
+                <li>
+                    <ul class="list-inline">
+                        <li class="list-inline-item titulo">Tags</li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">front end</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">desenvolvimento</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">javascript</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">e-commerce</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">automação</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">otimização</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">wordpress</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">e-mail marketing</a></li>
+                        <li class="list-inline-item badge badge-primary"><a href="#">e-commerce</a></li>
+                    </ul>
+                </li>              
+            </ul>
+    </section>
+    <hr>
+    <section class="row">
+        <ul>
+            <li>
+                <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+                <p>Conheça algumas das minhas últimas experiências profissionais, veja mais em meu <a href="">github</a>.</p>   
+            </li>
+                <li>
+                    <h4>Freelance <small><em>atualmente</em></small></h4>   
+                    <p>
+                         Desenvolvo soluções web personalizadas para diversos segmentos, confira em meu <a href="">portifólio</a>.
+                    <p>                 
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#print" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> Print Loja <small><em>(e-commerce)</em> desde 2017</small></h4></a>
+                    <p class="collapse" id="print">
+                        Desenvolvimento de soluções automatizadas de remarketing utilizando tecnologias diversas com ênfase na otimização de conversão, gerenciamento e criação de mailings semanais e análise de conversão.
+                    </p>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#dpi" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> DPI Agência, <small>2011 a 2013</small></h4></a>
+                    <p class="collapse" id="dpi">
+                        Na DPI eu tive a oportunidade de fazer uma imersão com profissionais de altíssimo nível, lá aprendi muito sobre design e coisas mais técnicas, como: impressão, perfis de cor, fotolitos, resoluções e também dei meus primeiros passos no desenvolvimento para internet criando minhas primeiras páginas simples com html, css e javascript. 
+                    </p>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#grafisbel" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> Grafisbel, <small>2006 a 2010</small></h4></a>
+                    <p class="collapse" id="grafisbel">
+                        Aqui foi onde tudo começou, lá aprendi (e ainda acho que lembro) todos os atalhos de corel draw. Formatos de papel, acabamentos, como uma impressora offset funciona e muitas outras coisas.. Tive a oportunidade de conhecer o fundador desta empresa Sérgio Quevedo, cujo tive a honra de aprender muitas coisas que me ajudam muito até hoje. Esta foi minha primeira oportunidade e onde dei os primeiros passos de minha carreira. 
+                    </p>
+                </li>
+                <li>
+                    <a data-toggle="collapse" href="#diversos" role="button" aria-expanded="false" aria-controls="collapseExample"><h4><i class="fa fa-plus" style="font-size: 15px;"></i> Diversos</h4></a>
+                    <div class="collapse" id="diversos">
+                    <p>Projetos diversos desenvolvidos paralelamente.</p>                 
+                    <div class="autoplay">
+                        <div>
+                            <figure>
+                                <img src="img/atrium.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/base.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/regnare.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/base.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                        <div>
+                            <figure>
+                                <img src="img/regnare.jpg" class="img-fluid" />
+                            </figure>
+                        </div>
+                    </div>
+                    </div>
+                </li>
+        </ul>
+    </section>
+    <hr>
+    </section>
+
+    <section class="row">
+        <div col-12>
+            <!-- <h3>objetivo</h3> -->
+            <blockquote class="quote-card">
+                <p>
+                    Gosto de ter objetivos e metas claras em minha vida, no nível profissional a maior delas é me <em>aperfeiçoar continuamente em tecnologia</em>. Todos os dias novas tecnologias surgem e sempre estou disposto a <em>aprender, ensinar e criar soluções</em>. Busco experiências que agreguem este tipo de valor.
+                </p>
+          
+                <cite>
+                    Luiz H. A. Ferreira.
+                </cite>
+            </blockquote>
+            <!-- <p>
+                Gosto de ter objetivos e metas claras em minha vida, no nível profissional a maior delas é me <em>aperfeiçoar continuamente em tecnologia</em>. Todos os dias novas tecnologias surgem e estar sempre disposto a <em>aprender, ensinar e criar soluções</em> , para mim, é a chave para manter-se no jogo. Busco experiências que agreguem este tipo de valor.
+                <br>
+                Me agrada a ideia de construir coisas relevantes para o mundo como contribuição.           
+            </p> -->
+        </div>
+    </section>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+<footer class="col-12">
+        <div class="row text-center">
+            <div class="col-md-6 col-12">
+                <p>2019 &copy; Luiz H. A. Ferreira
+                </p>
+            </div>
+            <div class="col-md-6 col-12">
+                <a href="#"><i class="fa fa-facebook"></i></a>&nbsp;
+                <a href="#"><i class="fa fa-linkedin"></i></a>&nbsp;
+                <a href="#"><i class="fa fa-instagram"></i></a>&nbsp;
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+$(document).ready(function(){
+    $('.autoplay').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: false
+    });
+});
+</script>
+
+</body>
+</html>
