@@ -1,0 +1,280 @@
+* {
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, h6 {
+    overflow-y: hidden;
+    line-height: inherit;
+}
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important; 
+}
+.badge-primary {
+    background: #000;
+    padding: 0.7em 1em 0.9em;
+}
+.badge-primary:hover {
+    background: gray;
+}
+.badge-primary a {
+    color: white;
+}
+.badge-primary a:hover {
+    text-decoration: none;
+}
+.no-padding {
+    padding: 0 !important;
+}
+.nav {
+    background:white;
+    -webkit-box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+    -moz-box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+    box-shadow: 1px 2px 8px -2px rgba(0,0,0,0.45);
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(253,60,101)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.jumbotron {
+    background: linear-gradient(rgba(122,0,188,0.6),rgba(122,0,188,0.6)), url('https://images.pexels.com/photos/546819/pexels-photo-546819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') no-repeat center center;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    color: #fff;
+    padding: 11em 0 4em !important;
+    border-radius: 0 !important;
+}
+.jumbotron h1 {
+    font-family: 'Baloo Bhai', cursive;
+    color: #fff;
+    font-size: 45px;
+    text-shadow: 2px 2px 7px rgba(0,0,0,0.45);
+}
+.lead {
+    overflow: hidden;
+}
+.lead.view-portfolio {
+    text-shadow: 2px 2px 7px rgba(0,0,0,0.45);
+    position: relative;
+    top: 1.8em;
+}
+.lead.view-portfolio a {
+    color: #fff;
+}
+h2 {
+    font-family: 'Baloo Bhai', cursive;
+}
+.perfil {
+    border-radius: 130px;
+    width: 150px;
+}
+.fonte {
+    font-family: 'Bree Serif', serif;
+}
+.nav-item a {
+    color: #fff !important;
+    font-size: 14px;
+    letter-spacing: 0;
+}
+a.navbar-brand {
+    color: #fff !important;
+}
+a.navbar-brand span strong {
+    font-family: 'Baloo Bhai', cursive;
+    font-size: 26px;
+    line-height: 28px;
+}
+.root, .root-pos {
+    color: #2bffd6 !important;
+}
+.root-pos {
+    font-weight: normal;
+    animation: blink-animation 0.5s steps(5, start) infinite;
+    -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+}
+.view-portfolio {
+    font-family: 'Baloo Bhai', cursive;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+.view-portfolio i {
+    color: #FD3C65 !important;
+}
+.navbar {
+    padding: 1rem 1rem;
+    background: rgb(73,128,139);
+    background: linear-gradient(0deg, rgba(73,128,139,0) 0%, rgba(2,0,36,1) 100%);
+}
+.info {
+    padding: 3em 1em 8em;
+    background: transparent;
+}
+.quote-card {
+background: #fff;
+color: #222222;
+padding: 20px;
+padding-left: 50px;
+box-sizing: border-box;
+box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+position: relative;
+overflow: hidden;
+min-height: 120px;
+}
+.quote-card p {
+font-size: 22px;
+line-height: 1.5;
+margin: 0;
+max-width: 80%;
+}
+.quote-card cite {
+font-size: 16px;
+margin-top: 10px;
+display: block;
+font-weight: 200;
+opacity: 0.8;
+}
+.quote-card:before {
+font-family: Georgia, serif;
+content: "“";
+position: absolute;
+top: 10px;
+left: 10px;
+font-size: 5em;
+color: rgba(238, 238, 238, 0.8);
+font-weight: normal;
+}
+.quote-card:after {
+font-family: Georgia, serif;
+content: "”";
+position: absolute;
+bottom: -110px;
+line-height: 100px;
+right: -32px;
+font-size: 25em;
+color: rgba(238, 238, 238, 0.8);
+font-weight: normal;
+}
+@media (max-width: 640px) {
+.quote-card:after {
+    font-size: 22em;
+    right: -25px;
+}
+}
+.quote-card.blue-card {
+background: #0078FF;
+color: #ffffff;
+box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.quote-card.blue-card:before, .quote-card.blue-card:after {
+color: #5FAAFF;
+}
+.quote-card.green-card {
+background: #00970B;
+color: #ffffff;
+box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.quote-card.green-card:before, .quote-card.green-card:after {
+color:#59E063 ;
+}
+
+.quote-card.red-card {
+background: #F61E32;
+color: #ffffff;
+box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.quote-card.red-card:before, .quote-card.red-card:after {
+color:#F65665 ;
+}
+
+.quote-card.yellow-card {
+background: #F9A825;
+color: #222222;
+box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+}
+.quote-card.yellow-card:before, .quote-card.yellow-card:after {
+color: #FBC02D;
+}
+footer p, footer a {
+    color: white;
+}
+footer {
+    background: #212121;
+    padding: 22px 0 0;
+}
+ul {
+    font-size: 22px;
+}
+.badge {
+    font-size: 13px;
+    font-weight: normal;
+    font-style: italic;
+    color: #fff !important;
+}
+.contact a {
+    color: #fff !important;
+    font-size: 18px;
+}
+.contact i {
+    position: relative;
+    top: 2px;
+}
+.titulo {
+    font-size:17px;
+    position: relative;
+    top:-5px;
+}
+.skills {
+    font-size:17px;
+    position: relative;
+    top:-14px;
+}
+h3 {
+    font-weight: bold;
+    font-size: 15px;
+}
+a h4 {
+    color: #000 !important;
+}
+a:hover {
+    text-decoration: none;
+}
+section {
+    padding: 3em 0 4em;
+}
+#portfolio {
+    color: rgba(253,60,101.1);
+}
+#about {
+    background: rgb(253,60,101);
+    color: #fff;
+    padding: 1em 0 0em;
+}
+
+.grid-item {
+    width: 160px;
+    height: 120px;
+    float: left;
+    background: #D26;
+    border: 2px solid #333;
+    border-color: hsla(0, 0%, 0%, 0.5);
+    border-radius: 5px;
+  }
+  
+  .grid-item--width2 { width:  320px; }
+  .grid-item--width3 { width:  480px; }
+  .grid-item--width4 { width:  720px; }
+  
+  .grid-item--height2 { height: 200px; }
+  .grid-item--height3 { height: 260px; }
+  .grid-item--height4 { height: 360px; }
+  
