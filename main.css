@@ -55,6 +55,9 @@ h1, h2, h3, h4, h5, h6 {
     padding: 11em 0 4em !important;
     border-radius: 0 !important;
 }
+#about a {
+    color: #fff;
+}
 .jumbotron h1 {
     font-family: 'Baloo Bhai', cursive;
     color: #fff;
