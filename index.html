@@ -1,249 +1,368 @@
 <html>
 <header>
-    <title>Luiz H. A. Ferreira - Freelance Web Developer & Graphic designer from Maringá, Brazil - Freelance Web Developer and Graphic designer from Maringá</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Luiz Ferreira - Freelance Web Developer & Graphic designer from Maringá, Brazil - Freelance Web
+        Developer and Graphic designer from Maringá</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>	
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">	
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
+    <style>
+        * {
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            overflow-y: hidden;
+            line-height: inherit;
+        }
+
+        .badge-primary {
+            background: #000;
+            padding: 0.7em 1em 0.9em;
+        }
+
+        .badge-primary:hover {
+            background: gray;
+        }
+
+        .badge-primary a {
+            color: white;
+        }
+
+        .badge-primary a:hover {
+            text-decoration: none;
+        }
+
+        .no-padding {
+            padding: 0 !important;
+        }
+
+        .nav {
+            background: white;
+            -webkit-box-shadow: 1px 2px 8px -2px rgba(0, 0, 0, 0.45);
+            -moz-box-shadow: 1px 2px 8px -2px rgba(0, 0, 0, 0.45);
+            box-shadow: 1px 2px 8px -2px rgba(0, 0, 0, 0.45);
+        }
+
+        .jumbotron {
+            background-image: url('./img/cover.jpg') !important;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: 0% 130%;
+            background-size: 100%;
+            color: #fff;
+            padding-top: 2em 0 2em !important;
+        }
+
+        .jumbotron h1 {
+            color: #ffce70;
+            font-size: 45px;
+        }
+
+        .perfil {
+            border-radius: 130px;
+            width: 150px;
+        }
+
+        .fonte {
+            font-family: 'Bree Serif', serif;
+        }
+
+        .nav-item a {
+            color: #000;
+        }
+
+        .navbar {
+            padding: 1rem 1rem;
+        }
+
+        .info {
+            padding: 3em 1em 8em;
+            background: transparent;
+        }
+
+        .quote-card {
+            background: #fff;
+            color: #222222;
+            padding: 20px;
+            padding-left: 50px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+            position: relative;
+            overflow: hidden;
+            min-height: 120px;
+        }
+
+        .quote-card p {
+            font-size: 22px;
+            line-height: 1.5;
+            margin: 0;
+            max-width: 80%;
+        }
+
+        .quote-card cite {
+            font-size: 16px;
+            margin-top: 10px;
+            display: block;
+            font-weight: 200;
+            opacity: 0.8;
+        }
+
+        .quote-card:before {
+            font-family: Georgia, serif;
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 5em;
+            color: rgba(238, 238, 238, 0.8);
+            font-weight: normal;
+        }
+
+        .quote-card:after {
+            font-family: Georgia, serif;
+            content: "”";
+            position: absolute;
+            bottom: -110px;
+            line-height: 100px;
+            right: -32px;
+            font-size: 25em;
+            color: rgba(238, 238, 238, 0.8);
+            font-weight: normal;
+        }
+
+        @media (max-width: 640px) {
+            .quote-card:after {
+                font-size: 22em;
+                right: -25px;
+            }
+        }
+
+        .quote-card.blue-card {
+            background: #0078FF;
+            color: #ffffff;
+            box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+
+        .quote-card.blue-card:before,
+        .quote-card.blue-card:after {
+            color: #5FAAFF;
+        }
+
+        .quote-card.green-card {
+            background: #00970B;
+            color: #ffffff;
+            box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+
+        .quote-card.green-card:before,
+        .quote-card.green-card:after {
+            color: #59E063;
+        }
+
+        .quote-card.red-card {
+            background: #F61E32;
+            color: #ffffff;
+            box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+
+        .quote-card.red-card:before,
+        .quote-card.red-card:after {
+            color: #F65665;
+        }
+
+        .quote-card.yellow-card {
+            background: #F9A825;
+            color: #222222;
+            box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
+        }
+
+        .quote-card.yellow-card:before,
+        .quote-card.yellow-card:after {
+            color: #FBC02D;
+        }
+
+        footer p,
+        footer a {
+            color: white;
+        }
+
+        footer {
+            background: #212121;
+            padding: 22px 0 0;
+        }
+
+        ul {
+            font-size: 22px;
+        }
+
+        .badge {
+            font-size: 13px;
+            font-weight: normal;
+            font-style: italic;
+            color: #fff !important;
+        }
+
+        .contact a {
+            color: #fff !important;
+            font-size: 18px;
+        }
+
+        .contact i {
+            position: relative;
+            top: 2px;
+        }
+
+        .titulo {
+            font-size: 17px;
+            position: relative;
+            top: -5px;
+        }
+
+        .skills {
+            font-size: 17px;
+            position: relative;
+            top: -14px;
+        }
+
+        h3 {
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        a h4 {
+            color: #000 !important;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+    </style>
 </header>
-<body>  
-    <div class="container-fluid fixed-top">
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container"> 
-                <a class="navbar-brand" href="#">
-                    <img src="flask.svg" alt="" width="50" style="display: block; float: left;">
-                    <span style="display: block; float: left; margin-left: 5px;">
-                        <strong>LUIZ FERREIRA</strong><br>
-                        <small><span class="root">&nbsp;~</span> Front-end Developer<span class="root"> .</span>
-                    </span>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">PORTFOLIO</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">BLOG</a>
-                    </li> -->
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">CLIENTES</a>
-                    </li> -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">CONTACT</a>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
 
-    
-
+<body>
     <div class="jumbotron text-center">
-        <h1 class="display-4">Front-end Developer<small><span class="root-pos">_</span></small></h1>
-        <p class="lead">Desenvolvo interfaces para ambientes web, aplicações e websites utilizando diversas tecnologias</p>
-        <p class="lead view-portfolio">
-          <a class="" href="#portfolio">View portfolio
-            <br>
-            <i class="fa fa-angle-down fa-2x"></i>
-          </a>
+        <figure>
+            <img src="./img/perfil.jpeg" alt="" class="perfil">
+        </figure>
+        <h1 class="display-4 fonte">Luiz Ferreira</h1>
+        <p class="lead"><strong>Software developer | Front-end specialist</strong></p>
+        <p class="contact">
+            <a href="mailto:lh.alvesf@gmail.com"><i class="fa fa-envelope-o"></i>
+                lh.alvesf@gmail.com</a>
         </p>
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            <section class="col-12" id="portfolio">
-                <h2 class="text-center">PORTFOLIO</h2>
-            </section>
-        </div>
-        <div class="clearfix"></div>
-
-        <div class="row" id="thumbsPortifolio">
-            <div class="col-12">
-                <div class="row">
-                    <div class="col-sm-12 col-md-4">
-                        <img src="/img/portfolio/atrium-centro-empresarial.png" alt="" class="img-fluid">
-                    </div>                    
-                    <div class="col-sm-12 col-md-4">
-                        <img src="/img/portfolio/scaffold-blog-1.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img src="/img/portfolio/bosque-da-mata-site.png" alt="" class="img-fluid">
-                    </div>                    
-                    <div class="col-sm-12 col-md-4">
-                        <img src="/img/portfolio/qrcode.jpg" alt="" class="img-fluid">
-                    </div>                    
-                    <div class="col-sm-12 col-md-4">
-                        <img src="/img/portfolio/regnare-engenharia.jpg" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-sm-12 col-md-4">
-                        <img src="/img/portfolio/base-marmoraria.jpg" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        
-        <!-- <div class="grid">
-            <div class="grid-item">
-                <img src="/img/qrcode.jpg" alt="" class="">
-                
-                <a href="#detail" data-toggle="modal" data-target="#detail">
-                    
-                </a>
-
-                <div class="modal fade modal-lg" id="detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header text-center">
-                          <h5 class="modal-title" id="">Nome Trabaho</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="jumbotron">
-                                <h1 class="display-4">Hello, world!</h1>
-                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                                <hr class="my-4">
-                                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                                <p class="lead">
-                                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/img/atrium-centro-empresarial.png" alt="" class="">
-            </div>
-            <div class="grid-item">
-                <img src="/img/scaffold-blog-1.jpg" alt="" class="">
-            </div>
-            <div class="grid-item">
-                <img src="/img/qrcode.jpg" alt="" class="">
-                
-                <a href="#detail" data-toggle="modal" data-target="#detail">
-                    
-                </a>
-
-                <div class="modal fade modal-lg" id="detail" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog" role="document">
-                      <div class="modal-content">
-                        <div class="modal-header text-center">
-                          <h5 class="modal-title" id="">Nome Trabaho</h5>
-                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                          </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="jumbotron">
-                                <h1 class="display-4">Hello, world!</h1>
-                                <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-                                <hr class="my-4">
-                                <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                                <p class="lead">
-                                  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                                </p>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                          <button type="button" class="btn btn-primary">Save changes</button>
-                        </div>
-                      </div>
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item">
-                <img src="/img/atrium-centro-empresarial.png" alt="" class="">
-            </div>
-            <div class="grid-item">
-                <img src="/img/scaffold-blog-1.jpg" alt="" class="">
-            </div>
-        </div> -->
-
-        <div class="row">
-            <div class="col-12 text-center">
-                <br>
-                <br>
-                <img src="/img/svg/plus.svg" alt="" width="50">
-                <br>
-                <br>
-                <br>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12" id="about">
-                <a href="/resume.html"><h2 class="text-center">ABOUT ME <i class="fa fa-arrow-right"></i></h2></a>
-            </div>
-        </div>
-        <div class="row">
-            <footer class="col-12" id="footer">
-                <p class="text-center">LUIZ FERREIRA &copy; 2020</p>
-                
-            </footer>
-        </div>
+        <p></p>
     </div>
 
 
+    <div class="container">
+        <div class="row info">
+            <div class="col-lg-12">
+                <section class="row">
+                    <ul>
+                        <li>
+                            <h3>ABOUT ME</h3>
+                            <p>
+                                A software developer that love to learn new things. Currently I'm imersed in cloud
+                                computing projects and building amazing web apps with React</p>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h3>HARD SKILLS</h3>
+                            <P>Javascript/Typescript (Nodejs/React), Python (Flask/Django), Testing (Jest/Cypress), AWS,
+                                Heroku, Linux, Docker,
+                                Kubernetes [..] I'm very excited with devOps/Platform engineering topics</P>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            <h3>SOFT SKILLS</h3>
+                            <P>Creativity, Leadership, Team work, Critical thinking.</P>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul>
+                        <li>
+                            <h3>EXPERIÊNCIA PROFISSIONAL</h3>
+                            <p>Currently I'm working at <a href="https://www.encora.com/">Encora</a>, a global company
+                                with a great talented team and a lot of nice challenges</p>
+                        </li>
+                    </ul>
 
+                    <br>
+                    <ul>
+                        <li>
+                            <h3>A BRIEF RESUME</h3>
+                            <p>
+                                I like to have clear goals in my life, and one of the most important of then surelly
+                                is constantly learn and develop myself. Learn new things everyday, for me, is the
+                                key to keep going through life with joy and happyness. Be able to exchange
+                                knowlogement with my coleagues, to build and maintain cool projects and to find
+                                smart solutions to fix complex problems are everything for me.
+                                And I'm always open to that.
+                            </p>
+                        </li>
+                    </ul>
 
+                    <br>
+                    <ul>
+                        <li>
+                            <h3>RANDOM INFO</h3>
+                            <p>
+                                At last but not least, I think important to share some things that pleasures me:
+                            <ul>
+                                <li>♝ <em>I love to play chess and a lot of board games</em></li>
+                                <li>🎸 <em>I play guitar since I was a child and I
+                                        really enjoy it</em></li>
+                                <li>🥋 <em>Sports are great for me and I practice jiu-jitsu, regularlly go to
+                                        the gym and swimming also.</em></li>
+                                <li>🏕️ <em>Currently I'm experiencing a nomad lifestyle, and I'm loving it</em></li>
+                                <li>🇩🇪 <em>In my spare time I'm studing some french and german 🤓</em></li>
+                            </ul>
+                            </p>
+                        </li>
+                    </ul>
+            </div>
+        </div>
 
-    
+    </div>
+    </div>
+    </div>
+    <footer class="col-12">
+        <div class="row text-center">
+            <div class="col-md-6 col-12">
+                <p>
+                    <span id="year"></span> &copy; Luiz Ferreira
+                </p>
+            </div>
+            <div class="col-md-6 col-12">
+                <a href="https://www.linkedin.com/in/lhalvesf/"><i class="fa fa-linkedin"></i></a>&nbsp;
+                <a href="https://github.com/lhalvesf"><i class="fa fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
 
-<script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js/masonry.pkgd.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script>
-$(document).ready(function(){
-    $('.autoplay').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-        arrows: false
-    });
-});
-
-
-$(window).on('load', function($){ 
-// init Masonry
-var $grid = $('.grid').masonry({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  columnWidth: '.grid-sizer'
-});
-
-// layout Masonry after each image loads
-$grid.imagesLoaded().progress( function() {
-  $grid.masonry('layout');
-});  
-
-</script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear()
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
 </body>
+
 </html>
