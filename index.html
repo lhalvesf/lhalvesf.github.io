@@ -6,7 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=rubik" rel="stylesheet"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
@@ -72,19 +79,14 @@
         }
 
         .jumbotron {
-            /* background-image: url('./img/cover.jpg') !important;
-            background-repeat: no-repeat;
-            background-attachment: fixed; */
-            /* background-position: 0% 130%;
-            background-size: 100%; */
-            background-color: #ffffff;
-            color: #000000;
+            background-color: transparent;
+            color: white;
             padding-top: 2em 0 2em !important;
         }
 
         .jumbotron h1 {
             /* color: #ffce70; */
-            color: #000000;
+            color: white;
             font-size: 45px;
         }
 
@@ -94,11 +96,12 @@
         }
 
         .fonte {
-            font-family: 'Bree Serif', serif;
+            font-family: 'Rubik', sans-serif;
+            font-weight: 500;
         }
 
         .nav-item a {
-            color: #000;
+            color: white;
         }
 
         .navbar {
@@ -112,7 +115,7 @@
 
         .quote-card {
             background: #fff;
-            color: #222222;
+            color: white;
             padding: 20px;
             padding-left: 50px;
             box-sizing: border-box;
@@ -138,7 +141,7 @@
         }
 
         .quote-card:before {
-            font-family: Georgia, serif;
+            font-family: 'Rubik', sans-serif;
             content: "“";
             position: absolute;
             top: 10px;
@@ -149,7 +152,7 @@
         }
 
         .quote-card:after {
-            font-family: Georgia, serif;
+            font-family: 'Rubik', sans-serif;
             content: "”";
             position: absolute;
             bottom: -110px;
@@ -202,7 +205,7 @@
 
         .quote-card.yellow-card {
             background: #F9A825;
-            color: #222222;
+            color: white;
             box-shadow: 0 1px 2px rgba(34, 34, 34, 0.12), 0 2px 4px rgba(34, 34, 34, 0.24);
         }
 
@@ -217,8 +220,7 @@
         }
 
         footer {
-            background: #212121;
-            padding: 22px 0 0;
+            padding: 2em 0 2em;
         }
 
         ul {
@@ -233,8 +235,9 @@
         }
 
         .contact a {
-            color: #000000 !important;
-            font-size: 18px;
+            color: rgb(216, 216, 216) !important;
+            font-size: 16px;
+            letter-spacing: 1px;
         }
 
         .contact i {
@@ -254,17 +257,36 @@
             top: -14px;
         }
 
+        .green {
+            color: #00FFA3 !important;
+            font-weight: 100;
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
         h3 {
-            font-weight: bold;
+            font-weight: 600;
             font-size: 15px;
+            color: #00FFA3;
+        }
+
+        h3::before {
+            content: "• ";
+            /* display: block; */
         }
 
         a h4 {
-            color: #000 !important;
+            color: white !important;
         }
 
         a:hover {
             text-decoration: none;
+        }
+
+        html,
+        body {
+            background-color: #111010 !important;
         }
     </style>
 </header>
@@ -274,18 +296,16 @@
         <figure>
             <img src="./img/perfil.jpeg" alt="" class="perfil">
         </figure>
-        <h1 class="display-4 fonte">Luiz Ferreira</h1>
-        <p class="lead"><strong>Software developer | Front-end specialist</strong></p>
+        <h1 class="display-4 fonte mb-3">Luiz Ferreira</h1>
+        <p class="lead green"><strong>Software developer | Front-end specialist</strong></p>
         <p class="contact">
             <a href="mailto:lh.alvesf@gmail.com"><i class="fa fa-envelope-o"></i>
                 lh.alvesf@gmail.com</a>
         </p>
-
-        <p></p>
     </div>
 
 
-    <div class="container">
+    <div class="container text-white">
         <div class="row info">
             <div class="col-lg-12">
                 <section class="row">
@@ -316,7 +336,7 @@
                     <ul>
                         <li>
                             <h3>PROFESSIONAL EXPERIENCE</h3>
-                            <p>Currently I'm working at <a href="https://www.encora.com/">Encora</a>, a global company
+                            <p>Currently I'm working for a global company
                                 with a great talented team and a lot of nice challenges</p>
                         </li>
                     </ul>
